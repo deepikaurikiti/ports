@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Deepika Urikiti" />
+  <meta name="description"
+    content="Welcome to Deepika Urikiti's personal portfolio website. Showcasing AI/ML engineering expertise, deep learning projects, and innovative solutions in artificial intelligence." />
+  <meta name="keywords"
+    content="Deepika Urikiti, Portfolio, AI/ML Engineer, Python, TensorFlow, Deep Learning, Machine Learning, Neural Networks, NLP, Computer Vision" />
+  <meta name="theme-color" content="#fcbc1d" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Deepika Urikiti | AI/ML Engineer Portfolio" />
+  <meta property="og:description"
+    content="Building the future with AI & ML. Explore my projects, skills and journey in artificial intelligence and machine learning." />
+  <title>Deepika Urikiti | AI/ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Canvas for particle animation -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>DU<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <a href="https://drive.google.com/file/d/1ObM89Pp5bnAbShwlXVTIsvl19RG-dK1n/view?usp=sharing" class="nav-resume-btn" target="_blank" rel="noopener">
+        <i class="fas fa-download"></i> Resume
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== HERO SECTION ====== -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-content">
+        <!-- Greeting -->
+        <div class="hero-greeting">
+          <span class="greeting-wave">👋</span>
+          <span>Hello, I'm</span>
+        </div>
+
+        <!-- Name -->
+        <h1 class="hero-name">
+          <span class="name-first">Deepika</span>
+          <span class="name-last">Urikiti</span>
+        </h1>
+
+        <!-- Animated Role Titles -->
+        <div class="hero-role">
+          <span class="role-prefix">I am a </span>
+          <span class="role-animated" id="role-animated"></span>
+          <span class="role-cursor">|</span>
+        </div>
+
+        <!-- Hero Description -->
+        <p class="hero-description">
+          Building the future with <span class="highlight">AI &amp; ML</span>.
+          Passionate about crafting intelligent systems that make a real-world impact
+          through <span class="highlight">Deep Learning</span>, <span class="highlight">NLP</span>, and <span
+            class="highlight">Computer Vision</span>.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" id="view-work-btn">
+            <span>View My Work</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary" id="lets-talk-btn">
+            <span>Let's Talk</span>
+            <i class="fas fa-paper-plane"></i>
+          </a>
+        </div>
+
+        <!-- Social Links -->
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/deepikaurikiti" target="_blank" rel="noopener" class="social-link"
+            id="linkedin-link" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/deepikaurikiti" target="_blank" rel="noopener" class="social-link"
+            id="github-link" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://twitter.com/tanjirokamado" target="_blank" rel="noopener" class="social-link"
+            id="twitter-link" title="Twitter/X">
+            <svg class="x-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+          <a href="mailto:deepikaurikiti03@gmail.com" class="social-link" id="email-link" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Image -->
+      <div class="hero-image-wrapper">
+        <div class="hero-image-container">
+          <div class="image-glow"></div>
+          <div class="image-ring ring-1"></div>
+          <div class="image-ring ring-2"></div>
+          <div class="image-ring ring-3"></div>
+          <img src="profile.jpeg" alt="Deepika Urikiti - AI/ML Engineer" class="hero-avatar" id="hero-avatar"
+            onerror="this.onerror=null; this.parentNode.querySelector('.avatar-initials').style.display='flex'; this.style.display='none';" />
+          <div class="avatar-initials">DU</div>
+          <!-- Floating tech badges -->
+          <div class="tech-badge badge-python">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+            <span>Python</span>
+          </div>
+          <div class="tech-badge badge-tf">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+              alt="TensorFlow" />
+            <span>TensorFlow</span>
+          </div>
+          <div class="tech-badge badge-pytorch">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" />
+            <span>PyTorch</span>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-val"><span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span></div>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val"><span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span></div>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val"><span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span></div>
+            <span class="stat-label">Years Learning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT SECTION ====== -->
+  <section class="about-section" id="about">
+    <div class="section-container">
+
+      <!-- Section Header -->
+      <div class="section-header" data-reveal>
+        <span class="section-tag">Get to know me</span>
+        <h2 class="section-title">About <span class="accent-text">Me</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="about-grid">
+
+        <!-- LEFT: Image + Availability Card -->
+        <div class="about-left" data-reveal>
+          <div class="about-image-wrapper">
+            <div class="about-img-glow"></div>
+            <img src="profile.jpeg" alt="Deepika Urikiti" class="about-avatar"
+              onerror="this.onerror=null; this.nextElementSibling.style.display='flex'; this.style.display='none';" />
+            <div class="about-initials-fallback">DU</div>
+
+            <!-- Experience badge -->
+            <div class="about-exp-badge">
+              <span class="exp-number">2+</span>
+              <span class="exp-label">Years of<br />Learning</span>
+            </div>
+          </div>
+
+          <!-- Availability card -->
+          <div class="availability-card">
+            <div class="avail-dot"></div>
+            <div class="avail-text">
+              <p class="avail-status">Open to Opportunities</p>
+              <p class="avail-tagline">Plot twist: my models train faster than I make decisions 🤖</p>
+            </div>
+            <a href="mailto:deepikaurikiti03@gmail.com" class="avail-cta">Hire Me →</a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Bio + Tags + Stats -->
+        <div class="about-right" data-reveal>
+
+          <!-- Bio -->
+          <div class="about-bio">
+            <h3 class="about-greeting">
+              Hi there! I'm <span class="accent-text">Deepika Urikiti</span> 👋
+            </h3>
+            <p class="about-para">
+              I'm a tech enthusiast and <strong>AI/ML Engineer</strong> who loves turning data into impactful solutions.
+              I have a strong foundation in machine learning, neural networks, and data science —
+              always chasing that next breakthrough model.
+            </p>
+            <p class="about-para">
+              I love exploring the intersection of AI and real-world applications,
+              from training deep neural networks to deploying production-ready ML models.
+              Whether it's a classification pipeline or a generative AI system,
+              I bring ideas to life with clean code and curiosity.
+            </p>
+          </div>
+
+          <!-- Info grid -->
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-icon"><i class="fas fa-graduation-cap"></i></span>
+              <div>
+                <span class="info-label">Education</span>
+                <span class="info-value">Computer Science Graduate</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon"><i class="fas fa-briefcase"></i></span>
+              <div>
+                <span class="info-label">Status</span>
+                <span class="info-value">Working Full-Time</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon"><i class="fas fa-map-marker-alt"></i></span>
+              <div>
+                <span class="info-label">Based in</span>
+                <span class="info-value">India 🇮🇳</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon"><i class="fas fa-calendar-alt"></i></span>
+              <div>
+                <span class="info-label">Started AI/ML</span>
+                <span class="info-value">Since 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interests / Tags -->
+          <div class="about-interests">
+            <h4 class="interests-title">My Focus Areas</h4>
+            <div class="interest-tags">
+              <span class="tag"><i class="fas fa-brain"></i> Deep Learning</span>
+              <span class="tag"><i class="fas fa-language"></i> NLP</span>
+              <span class="tag"><i class="fas fa-eye"></i> Computer Vision</span>
+              <span class="tag"><i class="fas fa-chart-line"></i> Data Science</span>
+              <span class="tag"><i class="fas fa-robot"></i> Generative AI / LLMs</span>
+              <span class="tag"><i class="fas fa-gamepad"></i> Reinforcement Learning</span>
+              <span class="tag"><i class="fas fa-cloud"></i> MLOps</span>
+              <span class="tag"><i class="fas fa-flask"></i> Research &amp; Development</span>
+            </div>
+          </div>
+
+          <!-- About Stats -->
+          <div class="about-stats-row">
+            <div class="about-stat">
+              <div class="stat-val"><span class="astat-num" data-target="10">0</span><span class="astat-plus">+</span></div>
+              <span class="astat-label">Projects Built</span>
+            </div>
+            <div class="about-stat">
+              <div class="stat-val"><span class="astat-num" data-target="2">0</span><span class="astat-plus">+</span></div>
+              <span class="astat-label">Years in AI/ML</span>
+            </div>
+            <div class="about-stat">
+              <div class="stat-val"><span class="astat-num" data-target="8">0</span><span class="astat-plus">+</span></div>
+              <span class="astat-label">Focus Areas</span>
+            </div>
+          </div>
+
+        </div><!-- /about-right -->
+      </div><!-- /about-grid -->
+    </div>
+  </section>
+
+  <!-- ====== SKILLS SECTION ====== -->
+  <section class="skills-section" id="skills">
+    <div class="section-container">
+
+      <!-- Section Header -->
+      <div class="section-header" data-reveal>
+        <span class="section-tag">What I work with</span>
+        <h2 class="section-title">My <span class="accent-text">Skills</span></h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">A curated toolkit I use to build, train, and deploy intelligent systems.</p>
+      </div>
+
+      <!-- Category Tabs -->
+      <div class="skills-tabs" data-reveal>
+        <button class="skills-tab active" data-category="languages">Languages</button>
+        <button class="skills-tab" data-category="frameworks">ML / AI Frameworks</button>
+        <button class="skills-tab" data-category="tools">Tools &amp; DevOps</button>
+        <button class="skills-tab" data-category="cloud">Cloud &amp; Databases</button>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="skills-grid" id="skills-grid">
+
+        <!-- ===== LANGUAGES ===== -->
+        <div class="skill-card" data-category="languages" data-level="Expert" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+          </div>
+          <span class="skill-name">Python</span>
+          <span class="skill-level-badge">Expert</span>
+        </div>
+        <div class="skill-card" data-category="languages" data-level="Intermediate" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />
+          </div>
+          <span class="skill-name">C</span>
+          <span class="skill-level-badge">Intermediate</span>
+        </div>
+        <div class="skill-card" data-category="languages" data-level="Intermediate" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+          </div>
+          <span class="skill-name">Java</span>
+          <span class="skill-level-badge">Intermediate</span>
+        </div>
+        <div class="skill-card" data-category="languages" data-level="Familiar" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript" />
+          </div>
+          <span class="skill-name">JavaScript</span>
+          <span class="skill-level-badge">Familiar</span>
+        </div>
+        <div class="skill-card" data-category="languages" data-level="Advanced" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
+          </div>
+          <span class="skill-name">SQL</span>
+          <span class="skill-level-badge">Advanced</span>
+        </div>
+        <div class="skill-card" data-category="languages" data-level="Familiar" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R" />
+          </div>
+          <span class="skill-name">R</span>
+          <span class="skill-level-badge">Familiar</span>
+        </div>
+        <div class="skill-card" data-category="languages" data-level="Intermediate" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash" />
+          </div>
+          <span class="skill-name">Bash / Shell</span>
+          <span class="skill-level-badge">Intermediate</span>
+        </div>
+
+        <!-- ===== ML / AI FRAMEWORKS ===== -->
+        <div class="skill-card" data-category="frameworks" data-level="Advanced" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+              alt="TensorFlow" />
+          </div>
+          <span class="skill-name">TensorFlow</span>
+          <span class="skill-level-badge">Advanced</span>
+        </div>
+        <div class="skill-card" data-category="frameworks" data-level="Advanced" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" />
+          </div>
+          <span class="skill-name">PyTorch</span>
+          <span class="skill-level-badge">Advanced</span>
+        </div>
+        <div class="skill-card" data-category="frameworks" data-level="Advanced" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.png" alt="Keras" />
+          </div>
+          <span class="skill-name">Keras</span>
+          <span class="skill-level-badge">Advanced</span>
+        </div>
+        <div class="skill-card" data-category="frameworks" data-level="Advanced" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"
+              alt="Scikit-learn" />
+          </div>
+          <span class="skill-name">Scikit-learn</span>
+          <span class="skill-level-badge">Advanced</span>
+        </div>
+        <div class="skill-card" data-category="frameworks" data-level="Advanced" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV" />
+          </div>
+          <span class="skill-name">OpenCV</span>
+          <span class="skill-level-badge">Advanced</span>
+        </div>
+        <div class="skill-card" data-category="frameworks" data-level="Intermediate" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HuggingFace" />
+          </div>
+          <span class="skill-name">Hugging Face</span>
+          <span class="skill-level-badge">Intermediate</span>
+        </div>
+        <div class="skill-card" data-category="frameworks" data-level="Intermediate" data-reveal>
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 32 32" class="custom-svg-icon" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="16" fill="#fcbc1d" /><text x="50%" y="58%" dominant-baseline="middle"
+                text-anchor="middle" font-size="13" font-weight="bold" fill="#000">NLP</text>
+            </svg>
+          </div>
+          <span class="skill-name">NLTK / spaCy</span>
+          <span class="skill-level-badge">Intermediate</span>
+        </div>
+        <div class="skill-card" data-category="frameworks" data-level="Intermediate" data-reveal>
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 32 32" class="custom-svg-icon" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="16" fill="#1c1c1c" /><text x="50%" y="58%" dominant-baseline="middle"
+                text-anchor="middle" font-size="9" font-weight="bold" fill="#fcbc1d">🦜 LC</text>
+            </svg>
+          </div>
+          <span class="skill-name">LangChain</span>
+          <span class="skill-level-badge">Intermediate</span>
+        </div>
+        <div class="skill-card" data-category="frameworks" data-level="Advanced" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" />
+          </div>
+          <span class="skill-name">Pandas</span>
+          <span class="skill-level-badge">Advanced</span>
+        </div>
+        <div class="skill-card" data-category="frameworks" data-level="Advanced" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" />
+          </div>
+          <span class="skill-name">NumPy</span>
+          <span class="skill-level-badge">Advanced</span>
+        </div>
+        <div class="skill-card" data-category="frameworks" data-level="Advanced" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" alt="Matplotlib" />
+          </div>
+          <span class="skill-name">Matplotlib</span>
+          <span class="skill-level-badge">Advanced</span>
+        </div>
+        <div class="skill-card" data-category="frameworks" data-level="Intermediate" data-reveal>
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 32 32" class="custom-svg-icon" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="16" fill="#00b6cb" /><text x="50%" y="58%" dominant-baseline="middle"
+                text-anchor="middle" font-size="8" font-weight="bold" fill="#fff">XGB</text>
+            </svg>
+          </div>
+          <span class="skill-name">XGBoost</span>
+          <span class="skill-level-badge">Intermediate</span>
+        </div>
+
+        <!-- ===== TOOLS & DEVOPS ===== -->
+        <div class="skill-card" data-category="tools" data-level="Expert" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg"
+              alt="Jupyter" />
+          </div>
+          <span class="skill-name">Jupyter</span>
+          <span class="skill-level-badge">Expert</span>
+        </div>
+        <div class="skill-card" data-category="tools" data-level="Expert" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
+          </div>
+          <span class="skill-name">VS Code</span>
+          <span class="skill-level-badge">Expert</span>
+        </div>
+        <div class="skill-card" data-category="tools" data-level="Advanced" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+          </div>
+          <span class="skill-name">Git &amp; GitHub</span>
+          <span class="skill-level-badge">Advanced</span>
+        </div>
+        <div class="skill-card" data-category="tools" data-level="Intermediate" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+          </div>
+          <span class="skill-name">Docker</span>
+          <span class="skill-level-badge">Intermediate</span>
+        </div>
+        <div class="skill-card" data-category="tools" data-level="Advanced" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" />
+          </div>
+          <span class="skill-name">Linux / Ubuntu</span>
+          <span class="skill-level-badge">Advanced</span>
+        </div>
+        <div class="skill-card" data-category="tools" data-level="Intermediate" data-reveal>
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 32 32" class="custom-svg-icon" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="32" rx="8" fill="#ffbe00" /><text x="50%" y="58%" dominant-baseline="middle"
+                text-anchor="middle" font-size="8" font-weight="bold" fill="#000">W&amp;B</text>
+            </svg>
+          </div>
+          <span class="skill-name">Weights &amp; Biases</span>
+          <span class="skill-level-badge">Intermediate</span>
+        </div>
+        <div class="skill-card" data-category="tools" data-level="Intermediate" data-reveal>
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 32 32" class="custom-svg-icon" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="32" rx="8" fill="#0194e2" /><text x="50%" y="58%" dominant-baseline="middle"
+                text-anchor="middle" font-size="7" font-weight="bold" fill="#fff">MLflow</text>
+            </svg>
+          </div>
+          <span class="skill-name">MLflow</span>
+          <span class="skill-level-badge">Intermediate</span>
+        </div>
+        <div class="skill-card" data-category="tools" data-level="Intermediate" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" />
+          </div>
+          <span class="skill-name">FastAPI / Flask</span>
+          <span class="skill-level-badge">Intermediate</span>
+        </div>
+        <div class="skill-card" data-category="tools" data-level="Intermediate" data-reveal>
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 32 32" class="custom-svg-icon" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="32" rx="8" fill="#ff4b4b" /><text x="50%" y="58%" dominant-baseline="middle"
+                text-anchor="middle" font-size="7.5" font-weight="bold" fill="#fff">Streamlit</text>
+            </svg>
+          </div>
+          <span class="skill-name">Streamlit</span>
+          <span class="skill-level-badge">Intermediate</span>
+        </div>
+
+        <!-- ===== CLOUD & DATABASES ===== -->
+        <div class="skill-card" data-category="cloud" data-level="Intermediate" data-reveal>
+          <div class="skill-icon-wrap">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+              alt="AWS" />
+          </div>
+          <span class="skill-name">AWS</span>
+          <span class="skill-level-badge">Intermediate</span>
+        </div>
+        <div class="skill-card" data-category="cloud" data-level="Familiar" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
+              alt="GCP" />
+          </div>
+          <span class="skill-name">Google Cloud</span>
+          <span class="skill-level-badge">Familiar</span>
+        </div>
+        <div class="skill-card" data-category="cloud" data-level="Familiar" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" />
+          </div>
+          <span class="skill-name">Azure ML</span>
+          <span class="skill-level-badge">Familiar</span>
+        </div>
+        <div class="skill-card" data-category="cloud" data-level="Intermediate" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HuggingFace Hub" />
+          </div>
+          <span class="skill-name">HuggingFace Hub</span>
+          <span class="skill-level-badge">Intermediate</span>
+        </div>
+        <div class="skill-card" data-category="cloud" data-level="Intermediate" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+          </div>
+          <span class="skill-name">MongoDB</span>
+          <span class="skill-level-badge">Intermediate</span>
+        </div>
+        <div class="skill-card" data-category="cloud" data-level="Advanced" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+              alt="PostgreSQL" />
+          </div>
+          <span class="skill-name">PostgreSQL</span>
+          <span class="skill-level-badge">Advanced</span>
+        </div>
+        <div class="skill-card" data-category="cloud" data-level="Familiar" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" />
+          </div>
+          <span class="skill-name">Redis</span>
+          <span class="skill-level-badge">Familiar</span>
+        </div>
+        <div class="skill-card" data-category="cloud" data-level="Familiar" data-reveal>
+          <div class="skill-icon-wrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" />
+          </div>
+          <span class="skill-name">Firebase</span>
+          <span class="skill-level-badge">Familiar</span>
+        </div>
+
+      </div><!-- /skills-grid -->
+
+      <!-- Skills Summary Bar -->
+      <div class="skills-summary" data-reveal>
+        <div class="summary-item">
+          <span class="summary-num">30+</span>
+          <span class="summary-label">Technologies</span>
+        </div>
+        <div class="summary-divider"></div>
+        <div class="summary-item">
+          <span class="summary-num">4</span>
+          <span class="summary-label">Domains</span>
+        </div>
+        <div class="summary-divider"></div>
+        <div class="summary-item">
+          <span class="summary-num">2+</span>
+          <span class="summary-label">Years Hands-On</span>
+        </div>
+        <div class="summary-divider"></div>
+        <div class="summary-item">
+          <span class="summary-num">∞</span>
+          <span class="summary-label">Curiosity</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== PROJECTS SECTION ====== -->
+  <section class="projects-section" id="projects">
+    <div class="section-container">
+
+      <!-- Section Header -->
+      <div class="section-header" data-reveal>
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured <span class="accent-text">Projects</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- Project 1: LegalPilot -->
+        <div class="project-card" data-reveal>
+          <div class="project-content">
+            <div class="project-top">
+              <div class="project-icon"><i class="fas fa-balance-scale"></i></div>
+              <div class="project-links">
+                <a href="#" class="project-link" title="GitHub (Coming Soon)"><i class="fab fa-github"></i></a>
+                <a href="#" class="project-link" title="Live Demo (Coming Soon)"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">LegalPilot</h3>
+            <p class="project-desc">
+              An agentic RAG system for legal Q&amp;A that achieved 87% answer relevance, 19 percentage points above the GPT-3.5 baseline. Built with a ReAct reasoning loop and LangGraph orchestration for multi-step legal document retrieval.
+            </p>
+            <div class="project-tech">
+              <span>LangGraph</span><span>LLaMA3 70B</span><span>ReAct</span><span>FAISS</span><span>LangChain</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Mental Health Hub -->
+        <div class="project-card" data-reveal>
+          <div class="project-content">
+            <div class="project-top">
+              <div class="project-icon"><i class="fas fa-heartbeat"></i></div>
+              <div class="project-links">
+                <a href="#" class="project-link" title="GitHub (Coming Soon)"><i class="fab fa-github"></i></a>
+                <a href="#" class="project-link" title="Live Demo (Coming Soon)"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Mental Health Hub</h3>
+            <p class="project-desc">
+              Award-winning AI platform for mental health support that won 1st place at HackForHumanity among 100+ participating teams.
+            </p>
+            <div class="project-tech">
+              <span>Python</span><span>AI/ML</span><span>NLP</span><span>Web Framework</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Custom Mask R-CNN -->
+        <div class="project-card" data-reveal>
+          <div class="project-content">
+            <div class="project-top">
+              <div class="project-icon"><i class="fas fa-crop-alt"></i></div>
+              <div class="project-links">
+                <a href="#" class="project-link" title="GitHub (Coming Soon)"><i class="fab fa-github"></i></a>
+                <a href="#" class="project-link" title="Live Demo (Coming Soon)"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Custom Mask R-CNN</h3>
+            <p class="project-desc">
+              Fine-tuned an instance segmentation model achieving +8 mAP improvement over the Detectron2 baseline for custom object classes.
+            </p>
+            <div class="project-tech">
+              <span>Detectron2</span><span>PyTorch</span><span>OpenCV</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: NLP Document Pipeline -->
+        <div class="project-card" data-reveal>
+          <div class="project-content">
+            <div class="project-top">
+              <div class="project-icon"><i class="fas fa-file-alt"></i></div>
+              <div class="project-links">
+                <span class="project-private" title="Private / Internal Project"><i class="fas fa-lock"></i> Internal</span>
+              </div>
+            </div>
+            <h3 class="project-title">NLP Document Pipeline (Alphastream.ai)</h3>
+            <p class="project-desc">
+              Production NLP pipeline for automated document classification and extraction, reducing manual effort by ~60% across 1,000+ documents.
+            </p>
+            <div class="project-tech">
+              <span>RoBERTa</span><span>DeBERTa</span><span>DistilBERT</span><span>HuggingFace</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /projects-grid -->
+    </div>
+  </section>
+
+  <!-- ====== CONTACT SECTION ====== -->
+  <section class="contact-section" id="contact">
+    <div class="section-container">
+      
+      <!-- Section Header -->
+      <div class="section-header" data-reveal>
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Let's <span class="accent-text">Connect</span></h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Have a project in mind, a question, or just want to say hi? I'm always open to discussing new opportunities and ideas.</p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Left: Contact Info -->
+        <div class="contact-info" data-reveal>
+          <div class="info-card">
+            <div class="ic-icon"><i class="fas fa-envelope"></i></div>
+            <div class="ic-details">
+              <span class="ic-label">Email Me</span>
+              <a href="mailto:deepikaurikiti03@gmail.com" class="ic-value">deepikaurikiti03@gmail.com</a>
+            </div>
+          </div>
+          
+          <div class="info-card">
+            <div class="ic-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="ic-details">
+              <span class="ic-label">Location</span>
+              <span class="ic-value">India 🇮🇳</span>
+            </div>
+          </div>
+
+          <!-- Social Links in Contact -->
+          <div class="contact-socials">
+            <p class="socials-label">Follow My Work</p>
+            <div class="socials-wrap">
+              <a href="https://www.linkedin.com/in/deepikaurikiti" target="_blank" rel="noopener" class="contact-social-link" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/deepikaurikiti" target="_blank" rel="noopener" class="contact-social-link" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://twitter.com/tanjirokamado" target="_blank" rel="noopener" class="contact-social-link" title="Twitter/X">
+                <svg class="x-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form-wrap" data-reveal>
+          <form class="contact-form" onsubmit="event.preventDefault(); alert('Form submission is a placeholder. Please email me directly!');">
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" class="form-input" placeholder="John Doe" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" id="email" class="form-input" placeholder="john@example.com" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-textarea" placeholder="How can I help you?" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary submit-btn">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="footer-text">
+        Made with <span class="heart">❤️</span> by <span class="footer-name">Deepika Urikiti</span>
+      </p>
+      <p class="footer-copy">&copy; 2026 Deepika Urikiti. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

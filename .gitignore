@@ -1,0 +1,17 @@
+# Images - kept local only
+*.gif
+*.webp
+*.svg
+*.ico
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor folders
+.vscode/
+.idea/
+
+# Logs
+*.log
