@@ -39,6 +39,7 @@
       <ul class="nav-links" id="nav-links">
         <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
         <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
         <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
         <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
         <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
@@ -299,7 +300,356 @@
     </div>
   </section>
 
+  <!-- ====== EXPERIENCE SECTION ====== -->
+  <section class="experience-section" id="experience">
+    <div class="section-container">
+
+      <!-- Section Header -->
+      <div class="section-header" data-reveal>
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Experience <span class="accent-text">&amp; Growth</span></h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">From research labs to production systems — here's where I've been.</p>
+      </div>
+
+      <!-- Tabs -->
+      <div class="exp-tabs" data-reveal>
+        <button class="exp-tab active" data-tab="career" id="tab-career">
+          <i class="fas fa-briefcase"></i> Career
+        </button>
+        <button class="exp-tab" data-tab="involvement" id="tab-involvement">
+          <i class="fas fa-users"></i> Involvement
+        </button>
+        <button class="exp-tab" data-tab="hackathons" id="tab-hackathons">
+          <i class="fas fa-trophy"></i> Hackathons
+        </button>
+      </div>
+
+      <!-- ===== CAREER CARDS ===== -->
+      <div class="exp-carousel-wrap" data-reveal>
+        <div class="exp-carousel" id="carousel-career">
+
+          <!-- Card 1: AGI Team Lead -->
+          <div class="exp-card">
+            <div class="exp-card-header">
+              <div class="exp-card-icon"><i class="fas fa-robot"></i></div>
+              <div class="exp-card-meta">
+                <h3 class="exp-card-title">AGI Team Lead</h3>
+                <p class="exp-card-company">Sustainability Economics.ai</p>
+                <span class="exp-card-date"><i class="fas fa-calendar-alt"></i> Sep 2025 – Apr 2026</span>
+              </div>
+            </div>
+            <p class="exp-card-summary">
+              Architected and led an AGI Orchestrator using planner–executor multi-agent topology, cutting resolution time by 35%. Deployed ML models and hybrid data infrastructure at scale on AWS.
+            </p>
+            <div class="exp-card-footer">
+              <button class="exp-learn-more" data-modal="modal-agi">Learn More <i class="fas fa-arrow-right"></i></button>
+              <div class="exp-tags-mini">
+                <span>PyTorch</span><span>OpenAI</span><span>AWS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: NLP Intern -->
+          <div class="exp-card">
+            <div class="exp-card-header">
+              <div class="exp-card-icon"><i class="fas fa-language"></i></div>
+              <div class="exp-card-meta">
+                <h3 class="exp-card-title">NLP Intern</h3>
+                <p class="exp-card-company">Alphastream.ai</p>
+                <span class="exp-card-date"><i class="fas fa-calendar-alt"></i> Jan 2025 – Sep 2025</span>
+              </div>
+            </div>
+            <p class="exp-card-summary">
+              Applied transformer models (DistilBERT, RoBERTa, DeBERTa) for legal document classification, reducing manual effort by 60%. Built RAG pipelines for clause-level analysis across 1,000+ documents.
+            </p>
+            <div class="exp-card-footer">
+              <button class="exp-learn-more" data-modal="modal-nlp">Learn More <i class="fas fa-arrow-right"></i></button>
+              <div class="exp-tags-mini">
+                <span>HuggingFace</span><span>RAG</span><span>NLP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Research Intern -->
+          <div class="exp-card">
+            <div class="exp-card-header">
+              <div class="exp-card-icon"><i class="fas fa-microscope"></i></div>
+              <div class="exp-card-meta">
+                <h3 class="exp-card-title">Research Intern</h3>
+                <p class="exp-card-company">IIIT Hyderabad</p>
+                <span class="exp-card-date"><i class="fas fa-calendar-alt"></i> May 2024 – Jun 2024</span>
+              </div>
+            </div>
+            <p class="exp-card-summary">
+              Built speech processing and signal classification models using Python and TensorFlow, improving voice recognition accuracy in noisy environments by 18%.
+            </p>
+            <div class="exp-card-footer">
+              <button class="exp-learn-more" data-modal="modal-research">Learn More <i class="fas fa-arrow-right"></i></button>
+              <div class="exp-tags-mini">
+                <span>TensorFlow</span><span>SVM</span><span>Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Data Science Intern -->
+          <div class="exp-card">
+            <div class="exp-card-header">
+              <div class="exp-card-icon"><i class="fas fa-chart-bar"></i></div>
+              <div class="exp-card-meta">
+                <h3 class="exp-card-title">Data Science Intern</h3>
+                <p class="exp-card-company">Fluentgrid Limited · Visakhapatnam</p>
+                <span class="exp-card-date"><i class="fas fa-calendar-alt"></i> May 2023 – Jun 2023</span>
+              </div>
+            </div>
+            <p class="exp-card-summary">
+              Built ARIMA/SARIMA forecasting models achieving 95% prediction accuracy on Hadoop/Spark. Automated data cleaning pipelines cutting preprocessing time by 50%.
+            </p>
+            <div class="exp-card-footer">
+              <button class="exp-learn-more" data-modal="modal-ds">Learn More <i class="fas fa-arrow-right"></i></button>
+              <div class="exp-tags-mini">
+                <span>ARIMA</span><span>Tableau</span><span>Spark</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /carousel-career -->
+        <button class="exp-arrow exp-arrow-left" id="career-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <button class="exp-arrow exp-arrow-right" id="career-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        <div class="exp-dots" id="career-dots"></div>
+      </div>
+
+      <!-- ===== INVOLVEMENT CARDS ===== -->
+      <div class="exp-carousel-wrap" id="involvement-wrap" style="display:none;" data-reveal>
+        <div class="exp-carousel" id="carousel-involvement">
+
+          <!-- Card: OWASP Tech Lead -->
+          <div class="exp-card exp-card-featured">
+            <div class="exp-card-header">
+              <div class="exp-card-icon exp-card-icon--purple"><i class="fas fa-shield-alt"></i></div>
+              <div class="exp-card-meta">
+                <h3 class="exp-card-title">Technical Lead</h3>
+                <p class="exp-card-company">OWASP Student Chapter · Vignan's Institute of IT</p>
+                <span class="exp-card-date"><i class="fas fa-calendar-alt"></i> Aug 2022 – May 2025</span>
+              </div>
+            </div>
+            <p class="exp-card-summary">
+              Led the technical wing of OWASP's student chapter, organizing cybersecurity workshops, CTF events, and hands-on security labs. Mentored 50+ students on secure coding practices and web application security.
+            </p>
+            <div class="exp-card-footer">
+              <button class="exp-learn-more" data-modal="modal-owasp">Learn More <i class="fas fa-arrow-right"></i></button>
+              <div class="exp-tags-mini">
+                <span>Cybersecurity</span><span>Leadership</span><span>Mentoring</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /carousel-involvement -->
+        <button class="exp-arrow exp-arrow-left" id="involvement-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <button class="exp-arrow exp-arrow-right" id="involvement-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        <div class="exp-dots" id="involvement-dots"></div>
+      </div>
+
+      <!-- ===== HACKATHONS CARDS ===== -->
+      <div class="exp-carousel-wrap" id="hackathons-wrap" style="display:none;" data-reveal>
+        <div class="exp-carousel" id="carousel-hackathons">
+
+          <!-- Card: Hack4Humanity -->
+          <div class="exp-card exp-card-featured">
+            <div class="exp-card-header">
+              <div class="exp-card-icon exp-card-icon--gold"><i class="fas fa-trophy"></i></div>
+              <div class="exp-card-meta">
+                <h3 class="exp-card-title">🥇 1st Place — Hack4Humanity</h3>
+                <p class="exp-card-company">HackForHumanity Hackathon</p>
+                <span class="exp-card-date"><i class="fas fa-users"></i> 100+ Teams Competing</span>
+              </div>
+            </div>
+            <p class="exp-card-summary">
+              Won first place among 100+ participating teams with "Mental Health Hub" — an AI-powered mental health support platform. Combined NLP, sentiment analysis, and conversational AI to deliver real-time emotional support.
+            </p>
+            <div class="exp-card-footer">
+              <button class="exp-learn-more" data-modal="modal-hack4">Learn More <i class="fas fa-arrow-right"></i></button>
+              <div class="exp-tags-mini">
+                <span>NLP</span><span>Python</span><span>AI/ML</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /carousel-hackathons -->
+        <button class="exp-arrow exp-arrow-left" id="hackathons-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <button class="exp-arrow exp-arrow-right" id="hackathons-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        <div class="exp-dots" id="hackathons-dots"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== EXPERIENCE MODALS ====== -->
+
+  <!-- Modal: AGI Team Lead -->
+  <div class="exp-modal-overlay" id="modal-agi">
+    <div class="exp-modal">
+      <div class="exp-modal-titlebar">
+        <div class="exp-modal-tab">AGI Team Lead &nbsp;·&nbsp; Sustainability Economics.ai</div>
+        <div class="exp-modal-controls">
+          <span class="modal-btn modal-minimize">—</span>
+          <span class="modal-btn modal-close" data-close="modal-agi">✕</span>
+        </div>
+      </div>
+      <div class="exp-modal-body">
+        <div class="exp-modal-role-info">
+          <span class="exp-modal-badge"><i class="fas fa-robot"></i> AGI Team Lead</span>
+          <span class="exp-modal-period">Sep 2025 – Apr 2026</span>
+        </div>
+        <ul class="exp-modal-bullets">
+          <li>Designed and deployed ML models for classification, pattern recognition, and recommendation tasks using TensorFlow and PyTorch; integrated NLP pipelines for semantic search across large-scale datasets on AWS.</li>
+          <li>Architected horizontally scalable AGI Orchestrator using planner–executor multi-agent topology with OpenAI and Gemini APIs, enabling dynamic task decomposition and asynchronous tool invocation, cutting resolution time by <strong>35%</strong>.</li>
+          <li>Engineered hybrid data infrastructure with PostgreSQL, DynamoDB, vector search layers (Milvus, Qdrant, pgvector), and event-driven pipelines via AWS S3, SQS, SNS, reducing inter-service latency by <strong>30%</strong>.</li>
+        </ul>
+        <div class="exp-modal-tech">
+          <span>TensorFlow</span><span>PyTorch</span><span>OpenAI API</span><span>Gemini API</span><span>LangGraph</span><span>AWS S3</span><span>SQS</span><span>SNS</span><span>PostgreSQL</span><span>DynamoDB</span><span>Milvus</span><span>Qdrant</span><span>pgvector</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: NLP Intern -->
+  <div class="exp-modal-overlay" id="modal-nlp">
+    <div class="exp-modal">
+      <div class="exp-modal-titlebar">
+        <div class="exp-modal-tab">NLP Intern &nbsp;·&nbsp; Alphastream.ai</div>
+        <div class="exp-modal-controls">
+          <span class="modal-btn modal-minimize">—</span>
+          <span class="modal-btn modal-close" data-close="modal-nlp">✕</span>
+        </div>
+      </div>
+      <div class="exp-modal-body">
+        <div class="exp-modal-role-info">
+          <span class="exp-modal-badge"><i class="fas fa-language"></i> NLP Intern</span>
+          <span class="exp-modal-period">Jan 2025 – Sep 2025</span>
+        </div>
+        <ul class="exp-modal-bullets">
+          <li>Applied <strong>DistilBERT, RoBERTa, and DeBERTa</strong> for legal document classification, reducing manual effort by <strong>60%</strong>; built RAG pipelines for clause-level analysis across 1,000+ documents.</li>
+          <li>Developed supervised and unsupervised NLP models for entity extraction and pattern recognition; evaluated with precision, recall, and F1 across diverse document corpora.</li>
+        </ul>
+        <div class="exp-modal-tech">
+          <span>DistilBERT</span><span>RoBERTa</span><span>DeBERTa</span><span>HuggingFace</span><span>RAG</span><span>Python</span><span>Transformers</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Research Intern -->
+  <div class="exp-modal-overlay" id="modal-research">
+    <div class="exp-modal">
+      <div class="exp-modal-titlebar">
+        <div class="exp-modal-tab">Research Intern &nbsp;·&nbsp; IIIT Hyderabad</div>
+        <div class="exp-modal-controls">
+          <span class="modal-btn modal-minimize">—</span>
+          <span class="modal-btn modal-close" data-close="modal-research">✕</span>
+        </div>
+      </div>
+      <div class="exp-modal-body">
+        <div class="exp-modal-role-info">
+          <span class="exp-modal-badge"><i class="fas fa-microscope"></i> Research Intern</span>
+          <span class="exp-modal-period">May 2024 – Jun 2024 · Hyderabad, India</span>
+        </div>
+        <ul class="exp-modal-bullets">
+          <li>Built speech processing and signal classification models using Python and TensorFlow, improving voice recognition accuracy in noisy environments by <strong>18%</strong>.</li>
+          <li>Applied SVM classifiers for acoustic event detection across diverse real-world audio datasets.</li>
+        </ul>
+        <div class="exp-modal-tech">
+          <span>TensorFlow</span><span>Python</span><span>SVM</span><span>Signal Processing</span><span>Speech Recognition</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Data Science Intern -->
+  <div class="exp-modal-overlay" id="modal-ds">
+    <div class="exp-modal">
+      <div class="exp-modal-titlebar">
+        <div class="exp-modal-tab">Data Science Intern &nbsp;·&nbsp; Fluentgrid Limited</div>
+        <div class="exp-modal-controls">
+          <span class="modal-btn modal-minimize">—</span>
+          <span class="modal-btn modal-close" data-close="modal-ds">✕</span>
+        </div>
+      </div>
+      <div class="exp-modal-body">
+        <div class="exp-modal-role-info">
+          <span class="exp-modal-badge"><i class="fas fa-chart-bar"></i> Data Science Intern</span>
+          <span class="exp-modal-period">May 2023 – Jun 2023 · Visakhapatnam, India</span>
+        </div>
+        <ul class="exp-modal-bullets">
+          <li>Built ARIMA/SARIMA forecasting models achieving <strong>95% prediction accuracy</strong> on Hadoop/Spark.</li>
+          <li>Automated data cleaning pipelines cutting preprocessing time by <strong>50%</strong>.</li>
+          <li>Delivered actionable business insights via interactive Tableau dashboards.</li>
+        </ul>
+        <div class="exp-modal-tech">
+          <span>ARIMA</span><span>SARIMA</span><span>Hadoop</span><span>Spark</span><span>Tableau</span><span>Python</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: OWASP -->
+  <div class="exp-modal-overlay" id="modal-owasp">
+    <div class="exp-modal">
+      <div class="exp-modal-titlebar">
+        <div class="exp-modal-tab">Technical Lead &nbsp;·&nbsp; OWASP · Vignan's Institute of IT</div>
+        <div class="exp-modal-controls">
+          <span class="modal-btn modal-minimize">—</span>
+          <span class="modal-btn modal-close" data-close="modal-owasp">✕</span>
+        </div>
+      </div>
+      <div class="exp-modal-body">
+        <div class="exp-modal-role-info">
+          <span class="exp-modal-badge"><i class="fas fa-shield-alt"></i> Technical Lead</span>
+          <span class="exp-modal-period">Aug 2022 – May 2025</span>
+        </div>
+        <ul class="exp-modal-bullets">
+          <li>Led the technical wing of the OWASP student chapter, driving cybersecurity awareness across the institution.</li>
+          <li>Organized and hosted hands-on CTF (Capture The Flag) competitions, penetration testing workshops, and secure coding bootcamps.</li>
+          <li>Mentored 50+ students on web application security, OWASP Top 10, and ethical hacking fundamentals.</li>
+          <li>Collaborated with faculty to integrate security best practices into the computer science curriculum.</li>
+        </ul>
+        <div class="exp-modal-tech">
+          <span>Cybersecurity</span><span>OWASP Top 10</span><span>CTF</span><span>Penetration Testing</span><span>Leadership</span><span>Mentoring</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Hack4Humanity -->
+  <div class="exp-modal-overlay" id="modal-hack4">
+    <div class="exp-modal">
+      <div class="exp-modal-titlebar">
+        <div class="exp-modal-tab">🥇 Hack4Humanity Winner &nbsp;·&nbsp; Mental Health Hub</div>
+        <div class="exp-modal-controls">
+          <span class="modal-btn modal-minimize">—</span>
+          <span class="modal-btn modal-close" data-close="modal-hack4">✕</span>
+        </div>
+      </div>
+      <div class="exp-modal-body">
+        <div class="exp-modal-role-info">
+          <span class="exp-modal-badge exp-modal-badge--gold"><i class="fas fa-trophy"></i> 1st Place Winner</span>
+          <span class="exp-modal-period">HackForHumanity · 100+ Teams</span>
+        </div>
+        <ul class="exp-modal-bullets">
+          <li>Won <strong>1st place</strong> out of 100+ competing teams at the HackForHumanity hackathon.</li>
+          <li>Built <strong>Mental Health Hub</strong> — an AI-powered mental health support platform combining NLP, sentiment analysis, and conversational AI to deliver real-time emotional support.</li>
+          <li>Designed the full ML pipeline from data ingestion to model inference, with a real-time chat interface and mood-tracking dashboard.</li>
+          <li>Presented the solution to a panel of judges, highlighting social impact, scalability, and technical depth.</li>
+        </ul>
+        <div class="exp-modal-tech">
+          <span>Python</span><span>NLP</span><span>Sentiment Analysis</span><span>Conversational AI</span><span>Web Framework</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ====== SKILLS SECTION ====== -->
+
   <section class="skills-section" id="skills">
     <div class="section-container">
 
