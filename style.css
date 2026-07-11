@@ -1980,6 +1980,16 @@ a.ic-value:hover {
   font-weight: 600;
 }
 
+.footer-visitor {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.footer-visitor #visitor-count {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 .footer-copy {
   font-size: 0.8rem;
   color: var(--text-muted);

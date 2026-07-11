@@ -507,3 +507,28 @@ window.addEventListener('load', () => {
   });
 
 })();
+
+// ===== VISITOR COUNTER =====
+(() => {
+  const countEl = document.getElementById('visitor-count');
+  if (!countEl) return;
+
+  const namespace = 'deepikaurikiti-portfolio2026';
+  const counter = 'visits';
+  const alreadyCountedThisSession = sessionStorage.getItem('du-portfolio-visited');
+  const endpoint = alreadyCountedThisSession
+    ? `https://api.counterapi.dev/v1/${namespace}/${counter}`
+    : `https://api.counterapi.dev/v1/${namespace}/${counter}/up`;
+
+  fetch(endpoint)
+    .then(res => res.json())
+    .then(json => {
+      const data = json.data || json;
+      const value = data.count ?? data.up_count ?? data.value;
+      countEl.textContent = value != null ? Number(value).toLocaleString() : '—';
+      sessionStorage.setItem('du-portfolio-visited', '1');
+    })
+    .catch(() => {
+      countEl.textContent = '—';
+    });
+})();
